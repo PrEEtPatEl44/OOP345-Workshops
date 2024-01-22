@@ -1,0 +1,19 @@
+/*/////////////////////////////////////////////////////////////////////////
+						  Workshop - #1 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 21 January 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+There were quite a few things in this workshop which i remembered in the last semester the concept we learned in cpp was of namespaces and 
+the first problem i faced in this workshop was of namespaces. I forgot to put the namespace seneca and used namespace sdds which we used 
+for the entirity of the last semester. Then I also used the alocopy function from the utils of last Semesters project. The new concept 
+introduced was of passing arguments to main which was very easy and the topic of extern gave me some trouble but reading about it again 
+was enought to solve the errors releated to it. In the end i also got a memory leak which was because of the alocopy function not deleting 
+the allocated memory to the destination but i was able to figure it out pretty quickly. Overall, this workshop was easy and professor told
+to use one topic from the last semester which i think is the rule of three that's why i have commented it in such a way.:)

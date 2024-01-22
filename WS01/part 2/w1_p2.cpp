@@ -1,3 +1,15 @@
+/*/////////////////////////////////////////////////////////////////////////
+						  Workshop - #1 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 21 January 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -22,11 +34,12 @@ codes
 	P - print to screen
 	A - archive
 */
-
 // TODO: write the prototype for the main function
 //         to accept command line arguments
+int main(int argc, char* argv[]) 
+{	
+	
 
-{
 	std::cout << "Command Line:\n";
 	std::cout << "--------------------------\n";
 	// TODO: print the command line here, in the format
@@ -34,6 +47,10 @@ codes
 	//   2: second argument
 	//   3: third argument
 	//   ...
+	int i = 0;
+	for (i = 0; i < argc; i++) {
+		std::cout << "  " << i + 1 << ": " << argv[i] << std::endl;
+	}
 
 	std::cout << "--------------------------\n\n";
 

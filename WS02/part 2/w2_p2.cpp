@@ -1,3 +1,14 @@
+/*/////////////////////////////////////////////////////////////////////////
+						  Workshop - #2 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 28 January 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
 #include <iostream>
 #include <iomanip>
 #include <utility>

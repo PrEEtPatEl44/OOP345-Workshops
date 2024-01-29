@@ -1,0 +1,13 @@
+/*/////////////////////////////////////////////////////////////////////////
+						  Workshop - #2 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 28 January 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+I learned more about C++ principles after completing this workshop, especially when it came to implementing copy and move semantics. Move semantics achieved considerable efficiency advantages by minimizing the overhead of unwanted data duplication, as evidenced by the notable time difference between copy and move operations. Reading the input file required two rounds for the StringSet constructor: first to count the strings, and then to fill the dynamic array. It would seem superfluous to read the file again, but before loading the strings, it was important to figure out how much memory would be needed. Investigating the chrono library exposed differences between system_clock and steady_clock. For measuring durations, steady_clock offers a consistent, non-adjustable time scale, while system_clock is susceptible to changes in the system clock.

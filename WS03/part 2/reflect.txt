@@ -1,0 +1,16 @@
+/*/////////////////////////////////////////////////////////////////////////
+                          Workshop - #3 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 3rd february 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+In This workshop I learned a plethora of things about tmeplated classes, but first to answer some of the questions in the readme file of the workshop 
+1> I added 3 additional functions in the Pair module one was the display function with the insertion operator overload to display the members of the pair class properly and another was the '==' operator overload to match the value key paris
+2> Only .h files were used for the Collection and Set modules because both of them are templated classes. For templated classes the compiler needs to see the entire template defination to generate the code for that template at compile time if split into two .h and .cpp files the compilers might not have the defination for the entire templated class ready before the class is instansiated leading to errors.
+One of the major error i encountered during this was the initilizaion of the static variables outside of the templated class initially i tried defining the static variables inside the class but ran into some errors the compiler suggested to use the keyword inline for it but not being able to find out the resources for the inline keyword on the internet i turned to my professor who told me that the static variables need to be initialised outside the class defination because they are like global variables. Another thing that was introduced was the std::fabs but reading its documentation and a few youtube videos i was able to figure out how to use it. 

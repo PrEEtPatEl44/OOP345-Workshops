@@ -1,5 +1,5 @@
 /*/////////////////////////////////////////////////////////////////////////
-						  Workshop - #6 (P2)
+                          Workshop - #6 (P2)
 Full Name  : Preet Bhagyesh Patel
 Student ID#: 132603226
 Email      : pbpatel48@myseneca.ca
@@ -9,24 +9,15 @@ Authenticity Declaration:
 I have done all the coding by myself and only copied the code that my
 professor provided to complete my workshops and assignments.
 /////////////////////////////////////////////////////////////////////////*/
-#ifndef SENECA_PERSON_H
-#define SENECA_PERSON_H
+#ifndef SENECA_UTILITIES_H_
+#define SENECA_UTILITIES_H_
 
 #include <iostream>
-#include <string>
+#include "Person.h"
 
-namespace seneca
-{
-    
-	class Person {
-	public:
-		virtual std::string status() const = 0;
-		virtual std::string name() const = 0;
-		virtual std::string age() const = 0;
-		virtual std::string id() const = 0;
-		virtual void display(std::ostream&) const = 0;
-		virtual ~Person() = default;
-	};
+namespace seneca {
+    Person* buildInstance(std::istream& in);
 }
 
-#endif
+#endif 
+

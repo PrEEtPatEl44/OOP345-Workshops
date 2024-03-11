@@ -1,0 +1,13 @@
+/*/////////////////////////////////////////////////////////////////////////
+                          Workshop - #6 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 10th March 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+During this workshop, a diverse range of goals was achieved, demonstrating a strong understanding of advanced programming concepts. Significant accomplishments include:Effectively managing polymorphic objects using the vector container from the STL, showcasing expertise in utilizing containers and their iterators, especially vectors and lists.Successfully transferring dynamically allocated objects into a container, indicating a solid grasp of resource management and the principles of object ownership.Implementing range-based iteration on objects within a container, displaying proficiency in modern C++ practices for clearer and more efficient code.Demonstrating the ability to detect and handle exceptions, an essential aspect of robust error management in larger applications, indicating a thorough understanding of exception mechanisms.Despite facing significant challenges, such as midterm preparations and a delayed start, adept problem-solving skills were employed to overcome them. Notably, tasks related to containers were handled with ease, underscoring a strong understanding of STL containers, vectors, lists, and iterators.

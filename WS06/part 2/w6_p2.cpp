@@ -22,9 +22,15 @@ void loadData(const char* filename, seneca::College& theCollege)
 		// TODO: This code can throw errors to signal that something 
 		//         went wrong while extracting data. Write code to catch
 		//         and handle the exceptions:
-		thePerson = seneca::buildInstance(file);
-		if (thePerson)
-			theCollege += thePerson;
+		        try {
+            thePerson = seneca::buildInstance(file);
+					if (thePerson) {
+						theCollege += thePerson;
+					}
+				}
+				catch (std::string str) {
+					std::cout << str << std::endl;
+				}
 	}
 }
 
@@ -45,9 +51,10 @@ int main(int argc, char** argv)
 	{
 		// TODO: Create a lambda expression that receives as parameter `const seneca::Person*`
 		//         and returns true if the person is student.
-		auto students = ...;
+		auto students = [](const seneca::Person* p) {return (p->status() == "Student"); };
+
 		theCollege.select(students, persons);
-	
+
 		std::cout << "|                                        Test #3 Students in the college!                                              |\n";
 		std::cout << "------------------------------------------------------------------------------------------------------------------------\n";
 		for (auto it = persons.begin(); it != persons.end(); ++it)
@@ -62,11 +69,11 @@ int main(int argc, char** argv)
 	{
 		// TODO: Create a lambda expression that receives as parameter `const seneca::Person*`
 		//         and returns true if the person is professor.
-		auto professors = ... ;
+		auto professors = [](const seneca::Person* p) {return (p->status() == "Professor"); };
 		theCollege.select(professors, persons);
-	
+
 		std::cout << "|                                        Test #4 Professors in the college!                                            |\n";
-		std::cout << "------------------------------------------------------------------------------------------------------------------------\n";		
+		std::cout << "------------------------------------------------------------------------------------------------------------------------\n";
 		for (const auto person : persons)
 		{
 			person->display(std::cout);

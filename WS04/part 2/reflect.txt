@@ -1,0 +1,13 @@
+/*/////////////////////////////////////////////////////////////////////////
+                          Workshop - #4 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 11th february 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+Through this session, I gained a clearer understanding of object-oriented design's composition and aggregation relationships. The workshop highlighted how the Child and Toy classes exemplify these concepts. In the Child class, the composition relationship was evident through the dynamically created array of Toy pointers, which facilitated the ownership and management of Toy objects' lifespans. Conversely, in the ConfirmOrder class, aggregation was demonstrated by retaining references to Toy objects without assuming responsibility for their creation or destruction. This distinction was crucial for effectively executing move and copy operations, as they varied based on the nature of interaction with the Toy class. Overall, this workshop provided valuable insights into memory management and class relationships in C++ programming, equipping me with practical knowledge for future endeavors in software development.

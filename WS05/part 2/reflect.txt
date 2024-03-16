@@ -1,0 +1,25 @@
+/*/////////////////////////////////////////////////////////////////////////
+                          Workshop - #5 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 18th february 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+Through this workshop, I dug into progressed C++ programming concepts like functors, templated capacities, and course plan, which altogether improved my understanding of measured and reusable code structures. Investigating the contrasts between functors and lambda expressions clarified when each is fitting, with functors advertising more adaptability and lambda expressions exceeding expectations in brief, neighborhood capacities. Dealing with exemptions within the SpellChecker constructor provoked contemplations around blunder taking care of options, such as mistake codes or boolean banners, for scenarios where special cases aren't favored. Decreasing code duplication between the Motion picture and Book classes included conceptualizing a common base course for shared usefulness, cultivating code reuse and viability. In conclusion, scrutinizing the need of default constructors in Motion picture and Book classes highlighted the significance of upholding appropriate initialization and minimizing protest creation in invalid states. Generally, this workshop given priceless experiences into making vigorous, proficient, and viable C++ codebases whereas ingrains best hones for future endeavors. 
+
+Q-1)The difference between the implementations/utilizations of a functor and a lambda expression. When is appropriate to use each one?
+ANSWER-Functors are callable objects with flexibility that can be implemented as structs or classes. Lambda expressions are short anonymous functions that can grab variables from their immediate scope, while they are useful for state-based reusable behavior. They work best in brief, focused tasks when readability is crucial.
+
+Q-2)e constructor for SpellChecker generates an exception in certain conditions. How would you change your code to achieve the same result, but without exceptions (both on the constructor and on the client side)? Compare the two solutions.
+ANSWER-In the event that we didnt toss the exemption as we did right presently, we would need to have an on the off chance that articulation within the code that checks whether the protest was made effectively or not and after that we would ought to print a message expressing the mistake. This is often exceptionally troublesome to do once more and once more as special cases can be exceptionally eccentric. Hence, it may be a great hone to actualize special case dealing with in your code.
+ 
+Q-3)the classes Movie and Book contain almost identical logic in loading data from the file. How would you redesign the classes in order not to duplicate that logic?
+ANSWER-here can be two methods to avoid duplicating the logic for loading data from a file in the Movie and Book classes.
+	1) We can introduce a common base class that encapsulates this functionality. The base class can define a virtual method for loading the data from the file, which can be 		   implemented in the derived classes.
+	2) We can also create an anonymous class that only has one object which can be used to carry out the functionality of loading data from the file.
+q-Q-4)the classes Movie and Book are instantiated from the main() function using a custom constructor, but they also contain a default constructor. Is the default constructor necessary? Could you remove it? Justify your answer.
+ANSWER-Yes the default constructor is necessary to support the other overloads of the constructor. The compiler does automatically generate the default constructor but only when there are no parameterized construtors. So default constructor is necessary only when we do not have other overloads of the default constructor

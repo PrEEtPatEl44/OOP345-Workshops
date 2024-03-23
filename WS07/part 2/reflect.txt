@@ -1,0 +1,26 @@
+/*/////////////////////////////////////////////////////////////////////////
+						  Workshop - #7 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 17th March 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/	
+
+
+1.I used for_each to iterate over the collection of songs and perform an operation on each element. Using it avoids the need for manual Loops. I also Utilized replace_if to replace elements in the collection that meet a certain condition. This also avoids manual loops and makes it easy to maintain code. I used any_of to check if any element in the collection satisfies a given condition. It is also used over manual loops. I used copy_if for getSongsForArtist() 
+2.STL Algorithms make it easy to read and maintain code. Moreover, it helps reducing code duplication. Also since they are predefined and examined thouroughly it reudces errors and bugs to a great content
+3.I alredy handeled the case where if the field is not valid it would sort the collection by title
+//////////////////Code --
+void SongCollection::sort(const std::string& field){
+		std::sort(m_songs.begin(), m_songs.end(), [&field](const Song& song1, const Song& song2)
+			{
+				if (field == "album") return song1.m_album < song2.m_album;
+				else if (field == "length") return song1.m_length < song2.m_length;
+				else return song1.m_title < song2.m_title;
+			}
+		);
+	}

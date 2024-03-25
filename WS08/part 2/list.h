@@ -1,3 +1,15 @@
+/*/////////////////////////////////////////////////////////////////////////
+						  Workshop - #8 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 24th March 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
 #ifndef SENECA_LIST_H
 #define SENECA_LIST_H
 
@@ -31,9 +43,25 @@ namespace seneca {
 
 		// TODO: Overload the += operator with a smart pointer
 		//       as a second operand.
+		/*void operator+=(std::unique_ptr<T> pointer) {
+			
+				list.push_back(*pointer);
+			
+
+		}*/
+		void operator+=(std::shared_ptr<T> pointer) {
+			list.push_back(*pointer);
+		}
+
+
 
 		// TODO: Overload the += operator with a raw pointer
 		//       as a second operand.
+
+		void operator+=(T* pointer) {
+			list.push_back(*pointer);
+		}
+
 
 		void display(std::ostream& os) const {
             os << std::fixed << std::setprecision(2);

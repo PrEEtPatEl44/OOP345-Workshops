@@ -10,18 +10,10 @@ I have done all the coding by myself and only copied the code that my
 professor provided to complete my workshops and assignments.
 /////////////////////////////////////////////////////////////////////////*/
 
-#include <memory>
-#include "list.h"
-#include "element.h"
-#include "utilities.h"
-
-using namespace std;
-
-namespace seneca {
-	List<Product> mergeRaw(const List<Description>& desc, const List<Price>& price) {
-		List<Product> priceList;
-		// TODO: Add your code here to build a list of products
-		//         using raw pointers
+In this workshop i Learned quite a lot about smart and raw pointers this workshop was relatively easy as there was no need to make entire modules just complete parts of the modules 
+Smart pointer syntax is much more easy to use as compared to raw pointers 
+Raw pointers require memory allocation, memory deallocation and exception handeling manually the syntax clutter along with memory management makes it difficult to implement and is less readable Whilst smart pointers automatically manage the memory and handle exceptions. The syntax of smarl pointers is much more clear making it much more easier to read. Hers's an example from my code of this workshop highlighting the difference between the smart and raw pointer 
+//         using raw pointers
 		
 		for (size_t i = 0; i < desc.size(); i++) {
 			for (size_t j = 0; j < price.size(); j++) {
@@ -38,17 +30,8 @@ namespace seneca {
 					}
 				}
 			}
-		}
-
-
-			
-		return priceList;
-	}
-
-	List<Product> mergeSmart(const List<Description>& desc, const List<Price>& price) {
-		List<Product> priceList;
-		// TODO: Add your code here to build a list of products
-		//         using smart pointers
+		} 
+//         using smart pointers
 		unique_ptr<Product> smartPointer;
 		for (size_t i = 0; i < desc.size(); i++) {
 			for (size_t j = 0; j < price.size(); j++) {
@@ -59,9 +42,3 @@ namespace seneca {
 				}
 			}
 		}
-
-
-
-		return priceList;
-	}
-}

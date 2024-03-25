@@ -1,3 +1,15 @@
+/*/////////////////////////////////////////////////////////////////////////
+						  Workshop - #8 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 24th March 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
 #ifndef SENECA_ELEMENT_H
 #define SENECA_ELEMENT_H
 
@@ -79,7 +91,12 @@ namespace seneca {
 		}
 
 		// TODO: add a function here to validate the price
-
+		void validate() {
+			if (m_price < 0) {
+				std::string str("*** Negative prices are invalid ***");
+				throw str;
+			}
+		}
 
 
 

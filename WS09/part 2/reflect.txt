@@ -1,0 +1,15 @@
+/*/////////////////////////////////////////////////////////////////////////
+						  Workshop - #9 (P2)
+Full Name  : Preet Bhagyesh Patel
+Student ID#: 132603226
+Email      : pbpatel48@myseneca.ca
+Date       : 31st March 2024
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+
+
+I learned how to work with binary files, link functions to certain tasks, use multiple threads for concurrent processes, and coordinate these threads with futures and bundled tasks during the workshop. Binary files have become a popular and effective way to store and retrieve data in a format that computers can understand, which can improve speed and save storage space. I found that connecting functions in advance to tasks simplifies the way work is distributed among threads, which speeds up processing, especially when dealing with large datasets. The time-saving advantages of parallel processing were made clear by breaking the map up into sections and allocating a thread to each. It became clear that futures and packaged tasks were essential for coordinating activities across threads and smoothly combining results. Careful planning was necessary to ensure thread coherence without disturbance.
